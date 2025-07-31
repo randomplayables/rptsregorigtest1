@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+input[type="number"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.guess-result {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.guess-result.low {
+  color: #d9534f;
+}
+
+.guess-result.high {
+  color: #f0ad4e;
+}
+
+.guess-result.correct {
+  color: #5cb85c;
+}
+
+.guess-history {
+  max-width: 400px;
+  margin: 0 auto 1.5rem;
+}
+
+.guess-history ul {
+  list-style: none;
+}
+
+.guess-history li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.prime-display {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+button + button {
+  margin-left: 0.5rem;
+}
